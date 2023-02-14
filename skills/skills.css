@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)),
+    url(/img/skillsbackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  cursor: url(/img/Cursors/Pacman.cur), auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 4rem;
+  color: #72cb25;
+  text-shadow: rgba(0, 255, 60, 1) 0px 0px 46px;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 600;
+  cursor: url(/img/Cursors/8bit\ Blinky\ From\ Pacman.cur), auto;
+}
+
+a:hover {
+  font-size: 1.5rem;
+  color: #33a5ff;
+  text-shadow: #33a5ff 0px 0px 32px;
+}
+
+.container {
+  margin-top: 50px;
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  animation: change-color 5s ease-in-out infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide p {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  animation: animate-color 5s linear infinite;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Press Start 2P", sans-serif;
+  letter-spacing: 2px;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  color: rgba(255, 255, 255, 1);
+  background: none;
+  border-radius: 30px;
+  padding: 1.2em 5em;
+  letter-spacing: 0.35em;
+  font-size: 1.5em;
+  font-weight: 700;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  margin: 1em;
+  animation: blinking_border 1.2s infinite;
+}
+
+.controls button:hover {
+  background-color: #e55dac;
+}
+
+.blue {
+  box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5),
+    0 0 1em rgba(0, 170, 170, 0.5);
+  border: #e55dac solid 2px;
+}
+
+.blue:hover {
+  background-color: #e55dac;
+  box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5),
+    0 0 1.5em rgba(0, 170, 170, 0.7);
+
+  animation: none;
+  font-size: 1.5em;
+}
+
+/*////// GLOWING EFFECT //////*/
+@keyframes change-color {
+  0% {
+    border-color: rgb(255, 0, 0);
+  }
+  20% {
+    border-color: rgb(0, 255, 0);
+  }
+  40% {
+    border-color: rgb(0, 0, 255);
+  }
+  60% {
+    border-color: rgb(255, 255, 0);
+  }
+  80% {
+    border-color: rgb(255, 0, 255);
+  }
+  100% {
+    border-color: rgb(0, 255, 255);
+  }
+}
+
+@keyframes animate-color {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  50% {
+    color: rgb(0, 255, 0);
+  }
+  100% {
+    color: rgb(0, 0, 255);
+  }
+}
+
+.nav-bar {
+  font-family: "Press Start 2P", sans-serif;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+}
+
+.nav-bar-el {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  list-style: none;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+a:hover {
+  font-size: 1.5rem;
+  color: #33a5ff;
+  text-shadow: #33a5ff 0px 0px 32px;
+}

@@ -1,0 +1,46 @@
+@media (max-width: 1020px) {
+  body {
+    height: auto;
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 718px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 462px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-bar {
+    margin: 10px 2px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  a {
+    font-size: 0.4rem;
+  }
+}

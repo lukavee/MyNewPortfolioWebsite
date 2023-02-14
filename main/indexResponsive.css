@@ -1,0 +1,59 @@
+@media (max-width: 1590px) {
+  .toggleBtn-section {
+    display: none;
+  }
+}
+
+@media (max-width: 804px) {
+  .my-name {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 626px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hireMeBtn {
+    padding: 0.8em 3em;
+  }
+}
+
+@media (max-width: 522px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 432px) {
+  a {
+    font-size: 0.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .my-name {
+    font-size: 18px;
+  }
+
+  .hireMeBtn {
+    padding: 0.6em 2.5em;
+  }
+}
+
+@media (max-width: 348px) {
+  a {
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .hireMeBtn {
+    padding: 0.4em 2.2em;
+  }
+}
